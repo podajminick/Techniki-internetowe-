@@ -1,1 +1,1 @@
-# Techniki-internetoweaa-
+# Techniki-internetowe-
