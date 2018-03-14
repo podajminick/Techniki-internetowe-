@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="pl" xml:lang="pl">
+<head>
+    <title>TI_lab_2017: Crawler - main page</title>
+    <link rel="shortcut icon" href="https://upel.agh.edu.pl/wz/theme/image.php/celupel/theme/1520987418/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, TI_lab_2017: Crawler - main page" />
+<link rel="stylesheet" type="text/css" href="https://upel.agh.edu.pl/wz/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://upel.agh.edu.pl/wz/theme/styles.php/celupel/1520987418/all" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/upel.agh.edu.pl\/wz","sesskey":"JnuBsO64WQ","themerev":"1520987418","slasharguments":1,"theme":"celupel","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1520987418","admin":"admin","svgicons":true,"usertimezone":"Europa \/ Warszawa","contextid":74651};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/upel.agh.edu.pl\/wz\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/upel.agh.edu.pl\/wz\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/upel.agh.edu.pl\/wz\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/upel.agh.edu.pl\/wz\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/upel.agh.edu.pl\/wz\/theme\/yui_combo.php?m\/1520987418\/","combine":true,"comboBase":"https:\/\/upel.agh.edu.pl\/wz\/theme\/yui_combo.php?","ext":false,"root":"m\/1520987418\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/upel.agh.edu.pl\/wz\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/upel.agh.edu.pl\/wz\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1520987418\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/upel.agh.edu.pl\/wz\/lib\/javascript.php\/1520987418\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/upel.agh.edu.pl\/wz\/lib\/javascript.php\/1520987418\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.7.1\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-6375177-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || []; 
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+ 
+  gtag('config', 'UA-6375177-13');
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+<script type="text/javascript" src="https://upel.agh.edu.pl/kokpit/cookies/cookies_utf-8_akcept.js"></script>
+	
+</head>
+
+<body  id="page-mod-resource-view" class="format-weeks  path-mod path-mod-resource gecko dir-ltr lang-pl yui-skin-sam yui3-skin-sam upel-agh-edu-pl--wz pagelayout-incourse course-1260 context-74651 cmid-30599 category-54 ">
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Przejdź do głównej zawartości</a>
+</div><script type="text/javascript" src="https://upel.agh.edu.pl/wz/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script type="text/javascript" src="https://upel.agh.edu.pl/wz/lib/javascript.php/1520987418/lib/javascript-static.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <header role="banner" class="pos-f-t navbar navbar-full navbar-light bg-faded navbar-static-top moodle-has-zindex">
+    
+        <div class="container-fluid navbar-nav">
+            <div data-region="drawer-toggle">
+                <button aria-expanded="false" aria-controls="nav-drawer" type="button" class="btn pull-xs-left m-r-1 btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><span aria-hidden="true">&#9776;</span><span class="sr-only">Rozszerzać</span></button>
+    <div id="uczelnianaplatforma">
+    			<span class="logo hidden-xs-down"><div id="kokpittop"><a href="http://upel.agh.edu.pl/kokpit/"><img class="startloginmain" src="https://upel.agh.edu.pl/wz/theme/image.php/celupel/theme/1520987418/images/kokpitupel" alt="Kokpit" height="33"></a></div></span>
+    </div>			
+    		</div>
+    
+    		
+    
+            
+    		
+    		
+    		<a href="https://upel.agh.edu.pl/wz" class="navbar-brand 
+                    hidden-sm-down
+                    ">
+                <span class="site-name hidden-sm-down">WZ</span>
+            </a>
+    
+            <!-- user_menu -->
+            <div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items" id="action-menu-1" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar" id="action-menu-1-menubar" role="menubar">
+
+            <div class="dropdown d-inline">
+    <a href="#" class="dropdown-toggle" id="dropdown-1" title="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="userbutton"><span class="usertext">Karina Chojnacka</span><span class="avatars"><span class="avatar current"><img src="https://upel.agh.edu.pl/wz/theme/image.php/celupel/core/1520987418/u/f2" alt="Obraz Chojnacka Karina" title="Obraz Chojnacka Karina" class="userpicture defaultuserpic" width="35" height="35" role="presentation" /></span></span></span><b class="caret"></b></a>
+        <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-1" role="menu" data-align="tr-br">
+            <a href="https://upel.agh.edu.pl/wz/my/" class="dropdown-item menu-action" role="menuitem"data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1"><i class="icon fa fa-tachometer fa-fw " aria-hidden="true" title="Kokpit" aria-label="Kokpit"></i><span class="menu-action-text" id="actionmenuaction-1">Kokpit</span></a><div class="dropdown-divider"></div><a href="https://upel.agh.edu.pl/wz/user/profile.php?id=4847" class="dropdown-item menu-action" role="menuitem"data-title="profile,moodle" aria-labelledby="actionmenuaction-2"><i class="icon fa fa-user fa-fw " aria-hidden="true" title="Profil" aria-label="Profil"></i><span class="menu-action-text" id="actionmenuaction-2">Profil</span></a><a href="https://upel.agh.edu.pl/wz/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem"data-title="grades,grades" aria-labelledby="actionmenuaction-3"><i class="icon fa fa-table fa-fw " aria-hidden="true" title="Stopnie" aria-label="Stopnie"></i><span class="menu-action-text" id="actionmenuaction-3">Stopnie</span></a><a href="https://upel.agh.edu.pl/wz/message/index.php" class="dropdown-item menu-action" role="menuitem"data-title="messages,message" aria-labelledby="actionmenuaction-4"><i class="icon fa fa-comment fa-fw " aria-hidden="true" title="Wiadomości" aria-label="Wiadomości"></i><span class="menu-action-text" id="actionmenuaction-4">Wiadomości</span></a><a href="https://upel.agh.edu.pl/wz/user/preferences.php" class="dropdown-item menu-action" role="menuitem"data-title="preferences,moodle" aria-labelledby="actionmenuaction-5"><i class="icon fa fa-wrench fa-fw " aria-hidden="true" title="Ustawienia" aria-label="Ustawienia"></i><span class="menu-action-text" id="actionmenuaction-5">Ustawienia</span></a><div class="dropdown-divider"></div><a href="https://upel.agh.edu.pl/wz/login/logout.php?sesskey=JnuBsO64WQ" class="dropdown-item menu-action" role="menuitem"data-title="logout,moodle" aria-labelledby="actionmenuaction-6"><i class="icon fa fa-sign-out fa-fw " aria-hidden="true" title="Wyloguj" aria-label="Wyloguj"></i><span class="menu-action-text" id="actionmenuaction-6">Wyloguj</span></a>
+        </div>
+</div>
+
+
+        </div>
+
+</div></div>
+    
+            <!-- navbar_plugin_output -->
+            <div class="popover-region collapsed popover-region-messages"
+    id="nav-message-popover-container" data-userid="4847"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link"
+        data-region="popover-region-toggle"
+        aria-role="button"
+        aria-controls="popover-region-container-5aa908615d7945aa9086158da010"
+        aria-haspopup="true"
+        aria-label="Wyświetl okno bez nowych wiadomości"
+        tabindex="0">
+                <i class="icon fa fa-comment fa-fw " aria-hidden="true" title="Przełącz menu wiadomości" aria-label="Przełącz menu wiadomości"></i>
+        <div class="count-container hidden" data-region="count-container"></div>
+
+    </div>
+    <div 
+        id="popover-region-container-5aa908615d7945aa9086158da010"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Okno powiadomiemia"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Wiadomości</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="newmessage-link">
+            <a href="https://upel.agh.edu.pl/wz/message/index.php?contactsfirst=1">Nowa wiadomość
+            </a>
+        </div>
+        <a class="mark-all-read-button"
+           href="#"
+           role="button"
+           title="Oznacz wszystko jako przeczytane"
+           data-action="mark-all-read">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw " aria-hidden="true" title="Oznacz wszystko jako przeczytane" aria-label="Oznacz wszystko jako przeczytane"></i></span>
+            <span class="loading-icon"><img class="icon " alt="Ładowanie" title="Ładowanie" src="https://upel.agh.edu.pl/wz/theme/image.php/celupel/core/1520987418/y/loading" /></span>
+        </a>
+        <a href="https://upel.agh.edu.pl/wz/message/edit.php?id=4847"
+           title="Preferencje wiadomości">
+            <i class="icon fa fa-cog fa-fw " aria-hidden="true" title="Preferencje wiadomości" aria-label="Preferencje wiadomości"></i>
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="messages" data-region="messages" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" data-region="empty-message" tabindex="0">Brak oczekujących wiadomości</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon " alt="Ładowanie" title="Ładowanie" src="https://upel.agh.edu.pl/wz/theme/image.php/celupel/core/1520987418/y/loading" /></span>
+        </div>
+                <a class="see-all-link"
+                    href="https://upel.agh.edu.pl/wz/message/index.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Wyświetl wszystko</div>
+                    </div>
+                </a>
+    </div>
+</div><div class="popover-region collapsed popover-region-notifications"
+    id="nav-notification-popover-container" data-userid="4847"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link"
+        data-region="popover-region-toggle"
+        aria-role="button"
+        aria-controls="popover-region-container-5aa908615ffe55aa9086158da011"
+        aria-haspopup="true"
+        aria-label="Wyświetl okno bez nowych powiadomień"
+        tabindex="0">
+                <i class="icon fa fa-bell fa-fw " aria-hidden="true" title="Przełącz menu powiadomień" aria-label="Przełącz menu powiadomień"></i>
+        <div class="count-container hidden" data-region="count-container"></div>
+
+    </div>
+    <div 
+        id="popover-region-container-5aa908615ffe55aa9086158da011"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Okno powiadomiemia"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Powiadomienia</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button"
+           href="#"
+           title="Oznacz wszystko jako przeczytane"
+           data-action="mark-all-read"
+           role="button">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw " aria-hidden="true" title="Oznacz wszystko jako przeczytane" aria-label="Oznacz wszystko jako przeczytane"></i></span>
+            <span class="loading-icon"><img class="icon " alt="Ładowanie" title="Ładowanie" src="https://upel.agh.edu.pl/wz/theme/image.php/celupel/core/1520987418/y/loading" /></span>
+        </a>
+        <a href="https://upel.agh.edu.pl/wz/message/notificationpreferences.php?userid=4847"
+           title="Preferencje powiadomienia">
+            <i class="icon fa fa-cog fa-fw " aria-hidden="true" title="Preferencje powiadomienia" aria-label="Preferencje powiadomienia"></i>
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications"
+            data-region="all-notifications"
+            role="log"
+            aria-busy="false"
+            aria-atomic="false"
+            aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">Nie masz powiadomień</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon " alt="Ładowanie" title="Ładowanie" src="https://upel.agh.edu.pl/wz/theme/image.php/celupel/core/1520987418/y/loading" /></span>
+        </div>
+                <a class="see-all-link"
+                    href="https://upel.agh.edu.pl/wz/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Wyświetl wszystko</div>
+                    </div>
+                </a>
+    </div>
+</div>
+    
+            <!-- search_box -->
+            <span class="hidden-md-down">
+            
+            </span>
+    
+    <!--     ukrycie menu jezykowego  -->
+                                    <!--     <nav class="nav navbar-nav hidden-md-down">  -->
+                                                <!-- custom_menu -->
+                                         <!--         -->
+                                                <!-- page_heading_menu -->
+                                       <!--           -->
+                                      <!--      </nav>-->
+    <!--     ukrycie menu jezykowego  koniec -->		
+    
+    
+       </div>
+    </header>
+    
+
+    <div id="page" class="container-fluid">
+        <header id="page-header" class="row"><div class="col-xs-12 p-a-1"><div class="card"><div class="card-block"><div class="pull-xs-right context-header-settings-menu"></div><div class="pull-xs-left"><div class="page-context-header"><div class="page-header-headings"><h1>Techniki internetowe - laboratorium</h1></div></div></div><div class="clearfix w-100 pull-xs-left" id="page-navbar"><div class="breadcrumb-nav"><nav role="navigation">
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="https://upel.agh.edu.pl/wz/" >Strona główna</a></li>
+                <li class="breadcrumb-item">Moje kursy</li>
+                <li class="breadcrumb-item"><a href="https://upel.agh.edu.pl/wz/course/view.php?id=1260" title="Techniki internetowe - laboratorium">TI_lab_2017</a></li>
+                <li class="breadcrumb-item"><a href="https://upel.agh.edu.pl/wz/course/view.php?id=1260#section-3" >[Crawler, PHP] Zajęcia 3 - 14.03.2018</a></li>
+                <li class="breadcrumb-item"><a href="https://upel.agh.edu.pl/wz/mod/resource/view.php?id=30599" title="Plik">Crawler - main page</a></li>
+    </ol>
+</nav></div><div class="breadcrumb-button pull-xs-right"></div></div><div id="course-header"></div></div></div></div></header>
+
+        <div id="page-content" class="row">
+            <div id="region-main-box" class="col-xs-12">
+                <section id="region-main" >
+                    <div class="card card-block">
+                    <span class="notifications" id="user-notifications"></span>
+                    <div role="main"><span id="maincontent"></span><h2>Crawler - main page</h2><div class="resourcecontent resourceimg"><img title="Crawler - main page" class="resourceimage" src="https://upel.agh.edu.pl/wz/pluginfile.php/74651/mod_resource/content/1/crawler.png" alt="" /></div></div>
+                    
+                   
+					</div>
+									 
+                </section>
+            </div>
+        </div>
+    </div>
+    <div id="nav-drawer" data-region="drawer" class="hidden-print moodle-has-zindex closed" aria-hidden="true" tabindex="-1">
+        <nav class="list-group">
+            <a class="list-group-item list-group-item-action " href="https://upel.agh.edu.pl/wz/course/view.php?id=1260" data-key="coursehome">
+                <div class="m-l-0">
+                        TI_lab_2017
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://upel.agh.edu.pl/wz/user/index.php?id=1260" data-key="participants">
+                <div class="m-l-0">
+                        Uczestnicy
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://upel.agh.edu.pl/wz/admin/tool/lp/coursecompetencies.php?courseid=1260" data-key="competencies">
+                <div class="m-l-0">
+                        Kompetencje
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://upel.agh.edu.pl/wz/grade/report/index.php?id=1260" data-key="grades">
+                <div class="m-l-0">
+                        Oceny
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://upel.agh.edu.pl/wz/course/view.php?id=1260#section-0" data-key="18891">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true"  aria-label=""></i>
+                            </span>
+                            <span class="media-body">Warunki zaliczenia</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://upel.agh.edu.pl/wz/course/view.php?id=1260#section-1" data-key="18892">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true"  aria-label=""></i>
+                            </span>
+                            <span class="media-body">[HTML + CSS] Zajęcia 1 - 28.02.2018</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://upel.agh.edu.pl/wz/course/view.php?id=1260#section-2" data-key="18893">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true"  aria-label=""></i>
+                            </span>
+                            <span class="media-body">[Github] Zajęcia 2 - 07.03.2018</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action font-weight-bold" href="https://upel.agh.edu.pl/wz/course/view.php?id=1260#section-3" data-key="18894">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true"  aria-label=""></i>
+                            </span>
+                            <span class="media-body">[Crawler, PHP] Zajęcia 3 - 14.03.2018</span>
+                        </div>
+                </div>
+            </a>
+        </nav>
+        <nav class="list-group m-t-1">
+            <a class="list-group-item list-group-item-action " href="https://upel.agh.edu.pl/wz/" data-key="home">
+                <div class="m-l-0">
+                        Strona główna
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://upel.agh.edu.pl/wz/my/" data-key="home">
+                <div class="m-l-0">
+                        Kokpit
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://upel.agh.edu.pl/wz/calendar/view.php?view=month" data-key="calendar">
+                <div class="m-l-0">
+                        Kalendarz
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://upel.agh.edu.pl/wz/user/files.php" data-key="privatefiles">
+                <div class="m-l-0">
+                        Prywatne pliki
+                </div>
+            </a>
+            <div class="list-group-item" data-key="mycourses">
+                <div class="m-l-0">
+                    Moje kursy
+                </div>
+            </div>
+            <a class="list-group-item list-group-item-action " href="https://upel.agh.edu.pl/wz/course/view.php?id=1262" data-key="1262">
+                <div class="m-l-1">
+                        Analiza danych: Matlab
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://upel.agh.edu.pl/wz/course/view.php?id=977" data-key="977">
+                <div class="m-l-1">
+                        ZPw
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://upel.agh.edu.pl/wz/course/view.php?id=652" data-key="652">
+                <div class="m-l-1">
+                        TSIS
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://upel.agh.edu.pl/wz/course/view.php?id=589" data-key="589">
+                <div class="m-l-1">
+                        SOiE
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://upel.agh.edu.pl/wz/course/view.php?id=1260" data-key="1260">
+                <div class="m-l-1">
+                        TI_lab_2017
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://upel.agh.edu.pl/wz/course/view.php?id=978" data-key="978">
+                <div class="m-l-1">
+                        MPWD_S
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://upel.agh.edu.pl/wz/course/view.php?id=708" data-key="708">
+                <div class="m-l-1">
+                        ME - ćw Wójtowicz
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://upel.agh.edu.pl/wz/course/view.php?id=624" data-key="624">
+                <div class="m-l-1">
+                        Hurtownie danych
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://upel.agh.edu.pl/wz/course/view.php?id=444" data-key="444">
+                <div class="m-l-1">
+                        IO (STJ)
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://upel.agh.edu.pl/wz/course/view.php?id=946" data-key="946">
+                <div class="m-l-1">
+                        ZPw(n)
+                </div>
+            </a>
+        </nav>
+    </div>
+</div>
+<footer id="page-footer" class="p-y-1 bg-inverse">
+    <div class="container">
+        <div id="course-footer"></div>
+<div id="uczelnianaplatforma">
+<p style="text-align: center;">
+<a href="http://upel.agh.edu.pl/kokpit/obszary.html" target="_blank"><img class="startlogin2" src="https://upel.agh.edu.pl/wz/theme/image.php/celupel/theme/1520987418/images/kokpit" alt="Obszary" height="60"></a>
+<a href="http://upel.agh.edu.pl/kokpit/wtyczki.html" target="_blank"><img class="startlogin2" src="https://upel.agh.edu.pl/wz/theme/image.php/celupel/theme/1520987418/images/wtyczki" alt="Wtyczki" height="60"></a>
+<a href="http://upel.agh.edu.pl/kokpit/faq.html" target="_blank"><img class="startlogin2" src="https://upel.agh.edu.pl/wz/theme/image.php/celupel/theme/1520987418/images/faq" alt="FAQ" height="60"></a>
+</p>
+</div>		
+<p style="text-align: center; color: #009c58;"><a href="http://www.agh.edu.pl" target="_blank"> <img src="https://upel.agh.edu.pl/wz/theme/image.php/celupel/theme/1520987418/images/logoagh_grey" alt="logo AGH" width="60" height="87"></a> <a href="http://www.cel.agh.edu.pl" target="_blank"> <img src="https://upel.agh.edu.pl/wz/theme/image.php/celupel/theme/1520987418/images/logocel_grey" alt="logo CeL" width="73" height="87"></a> <a href="http://www.uci.agh.edu.pl/uci" target="_blank"> <img src="https://upel.agh.edu.pl/wz/theme/image.php/celupel/theme/1520987418/images/logouci_grey" alt="logo UCI" width="85" height="87"></a> <br />Platforma e-Learningowa obsługiwana jest przez: <br /> <a href="http://www.cel.agh.edu.pl" target="_blank">Centrum e-Learningu AGH</a> oraz <a href="http://www.uci.agh.edu.pl/uci" target="_blank"> Uczelniane Centrum Informatyki AGH</a><br /><br /><br /></p>
+		
+
+<!--     ukrycie menu jezykowego dolnego -->
+
+     <!--   <nav class="nav navbar-nav hidden-lg-up">
+                <ul class="list-unstyled p-t-1">
+                </ul>
+        </nav>-->
+		
+<!--     ukrycie menu jezykowego dolnego koniec -->		
+        
+        <script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://upel.agh.edu.pl/wz/lib/requirejs.php/1520987418/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://upel.agh.edu.pl/wz/lib/javascript.php/1520987418/lib/jquery/jquery-3.1.0.min',
+        jqueryui: 'https://upel.agh.edu.pl/wz/lib/javascript.php/1520987418/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://upel.agh.edu.pl/wz/lib/javascript.php/1520987418/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="https://upel.agh.edu.pl/wz/lib/javascript.php/1520987418/lib/requirejs/require.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://upel.agh.edu.pl/wz/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage("pl",{
+ "Play": "Odtwarzaj",
+ "Pause": "Pauza",
+ "Current Time": "Aktualny czas",
+ "Duration Time": "Czas trwania",
+ "Remaining Time": "Pozostały czas",
+ "Stream Type": "Typ strumienia",
+ "LIVE": "NA ŻYWO",
+ "Loaded": "Załadowany",
+ "Progress": "Status",
+ "Fullscreen": "Pełny ekran",
+ "Non-Fullscreen": "Pełny ekran niedostępny",
+ "Mute": "Wyłącz dźwięk",
+ "Unmute": "Włącz dźwięk",
+ "Playback Rate": "Szybkość odtwarzania",
+ "Subtitles": "Napisy",
+ "subtitles off": "Napisy wyłączone",
+ "Captions": "Transkrypcja",
+ "captions off": "Transkrypcja wyłączona",
+ "Chapters": "Rozdziały",
+ "You aborted the media playback": "Odtwarzanie zostało przerwane",
+ "A network error caused the media download to fail part-way.": "Problemy z siecią spowodowały błąd przy pobieraniu materiału wideo.",
+ "The media could not be loaded, either because the server or network failed or because the format is not supported.": "Materiał wideo nie może być załadowany, ponieważ wystąpił problem z siecią lub format nie jest obsługiwany",
+ "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "Odtwarzanie materiału wideo zostało przerwane z powodu uszkodzonego pliku wideo lub z powodu błędu funkcji, które nie są wspierane przez przeglądarkę.",
+ "No compatible source was found for this media.": "Dla tego materiału wideo nie znaleziono kompatybilnego źródła.",
+ "Play video": "Odtwarzaj wideo",
+ "Close": "Zamknij",
+ "Modal Window": "Okno Modala",
+ "This is a modal window": "To jest okno modala",
+ "This modal can be closed by pressing the Escape key or activating the close button.": "Ten modal możesz zamknąć naciskając przycisk Escape albo wybierając przycisk Zamknij.",
+ ", opens captions settings dialog": ", otwiera okno dialogowe ustawień transkrypcji",
+ ", opens subtitles settings dialog": ", otwiera okno dialogowe napisów",
+ ", selected": ", zaznaczone"
+});
+
+    });
+});;
+
+require(['jquery', 'message_popup/message_popover_controller'], function($, controller) {
+    var container = $('#nav-message-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['theme_celupel/loader']);
+require(['theme_celupel/drawer'], function(mod) {
+    mod.init();
+});
+;
+require(["core/notification"], function(amd) { amd.init(74651, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });
+});
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Ostatnia modyfikacja","name":"Nazwa","error":"B\u0142\u0105d","info":"Informacja","yes":"Tak","no":"Nie","cancel":"Anuluj","confirm":"Potwierd\u017a","areyousure":"Jeste\u015b pewien?","closebuttontitle":"Zamknij","unknownerror":"Nieznany b\u0142\u0105d"},"repository":{"type":"Typ","size":"Rozmiar","invalidjson":"Nieprawid\u0142owy ci\u0105g jSON","nofilesattached":"Nie za\u0142\u0105czono plik\u00f3w","filepicker":"Wyb\u00f3r plik\u00f3w","logout":"Wyloguj si\u0119","nofilesavailable":"Brak dost\u0119pnych plik\u00f3w","norepositoriesavailable":"Niestety, \u017cadne z istniej\u0105cych repozytori\u00f3w nie mo\u017ce zawiera\u0107 plik\u00f3w w wymaganym formacie.","fileexistsdialogheader":"Plik istnieje","fileexistsdialog_editor":"Plik o wybranej nazwie zosta\u0142 ju\u017c za\u0142\u0105czony do tekstu, kt\u00f3ry edytujesz.","fileexistsdialog_filemanager":"Plik o wybranej nazwie ju\u017c zosta\u0142 do\u0142\u0105czony","renameto":"Zmie\u0144 nazw\u0119 na","referencesexist":"Istnieje {$a} skr\u00f3t\u00f3w, kt\u00f3re wykorzystuj\u0105 ten plik jako \u017ar\u00f3d\u0142o.","select":"Wybierz"},"admin":{"confirmdeletecomments":"Zamierzasz usun\u0105\u0107 komentarze, czy jeste\u015b pewien(a)?","confirmation":"Potwierdzenie"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\n\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"pl"});
+});
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random5aa9086158da012'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5aa9086158da012'); });
+})();
+//]]>
+</script>
+
+    </div>
+</footer>
+
+
+		
+</body>
+</html>
