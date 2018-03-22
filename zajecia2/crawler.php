@@ -13,15 +13,25 @@
 $url = $_GET["search"];
 
 if (filter_var($url, FILTER_VALIDATE_URL)) {
-    echo("$url is a valid URL");
+    echo("$url is a valid URLa");
 } else {
-    echo("$url is not a valid URL");
+    echo("$url is not a valid URLa");
 }
-    
-    
-    nazwa_url=document.getElementsByTagName("a");
-    echo $nazwa_url;
+	//$a = $url->getElementsByTagName('a');
+	
+	echo("hahja is not a valid URL");
 ?>
+<!--
+    //
+	
+//    $a_elements= $url->getElementsByTagName("a");
+//	for ($i; $i < $a_elements->length; $i++) {
+//    $attr = $a->item($i)->getAttribute('href');
+//
+//echo $attr . "\n";
+//}
+-->
+
 
 </body>
 </html
