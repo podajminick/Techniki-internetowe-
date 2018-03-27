@@ -1,0 +1,39 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: arial,sans-serif;
+	color: darkslategray;
+	font-size: 13px;
+	font-size: 100%;/* 1.6rem */;
+	background: #fff;
+	border-box: border-box;
+	
+}
+
+input {
+	display: block;
+	padding: 10px;
+	margin: 20px auto;
+	text-align: center;
+	border: #C0C0C0;
+	box-shadow:#C0C0C0 2px 3px 5px 1px;
+}
+
+form{
+	text-align: center;
+	margin: 20px auto;
+	background: 	#EEEEEE;
+	padding: 30px;
+	
+}
+div{
+	float: left;
+	background: #C0C0C0;
+	margin: 3px;
+        padding:10px;
+}
+#fault{
+	color:red;
+	text-align: center;
+	margin: auto;
+}
